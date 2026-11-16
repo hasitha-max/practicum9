@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CraftSphere - CSS Animation</title>
+
+    <style>
+        body {
+            background-color: #fff8f0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Text flying from left and repeating */
+        h1 {
+            color: #8b4513;
+            font-size: 40px;
+            animation: fly 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes fly {
+            from {
+                transform: translateX(-500px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Image hover transition */
+        img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CraftSphere</h1>
+
+    <h2>Welcome to the World of Handmade Crafts!</h2>
+
+    <p>
+        Explore creativity through beautiful handmade crafts
+        and DIY designs.
+    </p>
+
+    <img src="craftsphere logo.jpg" alt="Beautiful Handmade Craft">
+
+</body>
+</html>
